@@ -1,0 +1,96 @@
+import { projects } from "../const";
+import { ArrowDown, Briefcase, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+
+export default function Work() {
+  return (
+    <div className="relative z-10 py-12 px-4">
+      <div className="max-w-6xl mx-auto z-50">
+        {/* Header */}
+        <div className="bg-black text-white rounded-2xl p-6 mb-8 inline-block">
+          <h1 className="text-4xl font-archivo font-bold flex items-center">
+            <span className="mr-4">Work</span>
+            <Briefcase size={40} />
+          </h1>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="space-y-16">
+          {projects.map((project, index) => (
+            <div key={project.id} className="bg-black rounded-3xl p-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                {/* Project Image */}
+                <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
+                  <div className="bg-gray-800 rounded-2xl p-4 overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-fit object-cover rounded-xl"
+                      style={{ marginBottom: '-50px' }}
+                    />
+                  </div>
+                </div>
+
+                {/* Project Info */}
+                <div
+                  className={`text-white self-start h-full flex flex-col ${index % 2 === 1 ? "lg:order-1" : ""}`}
+                >
+                  <h3 className="text-2xl font-archivo font-bold mb-4">
+                    {project.title}
+                  </h3>
+
+                  <p className="font-helvetica font-bold mb-6 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  {/* Skills */}
+                  <div className="mb-6">
+                    <h4 className="font-helvetica font-bold text-lg mb-2">
+                      Skills
+                    </h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.skills.map((skill) => (
+                        <span
+                          key={skill}
+                          className="bg-portfolio-blue text-white px-3 py-1 rounded-full text-sm font-helvetica font-bold"
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Next Project Arrow */}
+                  <div className="w-full flex justify-end h-full items-end">
+                    <Link
+                      to={`/works/${project.slug}`}
+                      className="w-fit flex flex-row gap-2 items-center justify-center cursor-pointer"
+                    >
+                      <span className="text-white font-archivo font-bold text-2xl">
+                        Learn more
+                      </span>
+                      <ArrowRight
+                        className="text-white mx-auto transform"
+                        size={48}
+                      />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <h2 className="text-4xl font-helvetica font-bold text-black mb-4">
+            Like what you see? give me a shout!
+          </h2>
+          <div className="flex justify-center">
+            <ArrowDown className="text-black animate-bounce" size={48} />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
