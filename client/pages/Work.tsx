@@ -1,4 +1,4 @@
-import { projects } from "../const";
+import { projects } from "../projects";
 import { ArrowDown, Briefcase, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,7 @@ export default function Work() {
                       src={project.image}
                       alt={project.title}
                       className="w-full h-fit object-cover rounded-xl"
-                      style={{ marginBottom: '-50px' }}
+                      style={{ marginBottom: "-50px" }}
                     />
                   </div>
                 </div>

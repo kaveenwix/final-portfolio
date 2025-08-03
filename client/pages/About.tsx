@@ -1,4 +1,4 @@
-import { Code, Paintbrush } from "lucide-react";
+import { Code, Paintbrush, User } from "lucide-react";
 
 export default function About() {
   return (
@@ -8,9 +8,7 @@ export default function About() {
         <div className="bg-black text-white rounded-2xl p-6 mb-8 inline-block">
           <h1 className="text-4xl font-archivo font-bold flex items-center">
             <span className="mr-4">About</span>
-            <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-              <span className="text-black text-2xl">👤</span>
-            </div>
+            <User size={40} />
           </h1>
         </div>
 

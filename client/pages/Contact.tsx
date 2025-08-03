@@ -1,4 +1,5 @@
-import { Github, Instagram, Linkedin, Mail, User } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
@@ -8,7 +9,7 @@ export default function Contact() {
         <div className="bg-black text-white rounded-2xl p-6 mb-8 inline-block">
           <h1 className="text-4xl font-archivo font-bold flex items-center">
             <span className="mr-4">Contact</span>
-            <User size={40} />
+            <Phone size={40} />
           </h1>
         </div>
 
@@ -16,9 +17,9 @@ export default function Contact() {
         <div className="bg-black text-white rounded-3xl p-12 text-center">
           {/* Profile Image */}
           <div className="mb-8">
-            <div className="w-32 h-32 mx-auto rounded-full border-2 border-white overflow-hidden">
+            <div className="w-32 h-32 mx-auto rounded-full overflow-hidden">
               <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/bd18cd65e3d33f70d73427256d162e19882c1c5d?width=338"
+                src="/images/kaveen/kaveen.png"
                 alt="Kaveen Wickramasinghe"
                 className="w-full h-full object-cover"
               />
@@ -28,19 +29,18 @@ export default function Contact() {
           {/* Navigation Links */}
           <div className="mb-12">
             <div className="space-y-6 text-left max-w-sm mx-auto">
-              <a
-                href="#about"
+              <Link
+                to="/about"
                 className="block text-3xl font-helvetica font-bold hover:text-gray-300 transition-colors"
               >
-                about
-              </a>
-              <a
-                href="#work"
+                About
+              </Link>
+              <Link
+                to="/work"
                 className="block text-3xl font-helvetica font-bold hover:text-gray-300 transition-colors"
               >
-                work
-              </a>
-              <div className="text-3xl font-helvetica font-bold">Github</div>
+                Work
+              </Link>
             </div>
           </div>
 
