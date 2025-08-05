@@ -43,7 +43,7 @@ export const projects = [
     id: 4,
     slug: "linkedin-redesign",
     title: "LinkedIn Redesign",
-    description: "This project involved redesigning the mobile version of LinkedIn as a personal challenge to apply proper UI/UX principles. I aimed to rethink the app’s interface to simplify the overall user experience, improve usability, and create a cleaner, more intuitive design. Through this process, I explored ways to enhance navigation and reduce clutter while maintaining the app’s core functionality.",
+    description: "This project involved redesigning the mobile version of LinkedIn as a personal challenge to apply proper UI/UX principles. I aimed to rethink the app’s interface to simplify the overall user experience, improve usability, and create a cleaner, more intuitive design. Through this process, I explored ways to enhance navigation and reduce clutter while maintaining the app’s core functionality. link to figma: https://www.figma.com/design/i4OJeYQweSCHJioonTiFca/ui-uz-term-proj?node-id=0-1&t=prejRFmdFcwIPHEJ-1",
     skills: ["Figma"],
     image: "/images/linkedin.png",
     timeline: "MAR 27th - APR 8th 2025",

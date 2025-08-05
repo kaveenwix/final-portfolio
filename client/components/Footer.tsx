@@ -16,7 +16,7 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-8 text-lg font-helvetica font-bold">
-           <link rel="stylesheet" href="pages/works/About.tsx" /> <a href="#about" className="hover:text-gray-300 transition-colors">about</a>
+            <link rel="stylesheet" href="pages/works/About.tsx" /> <a href="#about" className="hover:text-gray-300 transition-colors">about</a>
             <a href="#work" className="hover:text-gray-300 transition-colors">work</a>
             <a href="#contact" className="hover:text-gray-300 transition-colors">contact</a>
           </div>
