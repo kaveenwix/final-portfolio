@@ -18,38 +18,37 @@ export const projects = [
     slug: "cloud-cosmetics",
     title: "Cloud Cosmetics",
     description:
-      "A 3d designed ad for a fake cosmetic company called Cloud cosmetics",
+      "A 3D-designed advertisement created for the fictional beauty brand Cloud Cosmetics. This conceptual ad explores the ethereal and dreamy qualities of the brand through soft lighting, airy textures, and modern minimalist design. Developed using Adobe Dimension and Photoshop, the visual aims to capture the essence of weightless beauty and elevate the viewer’s perception of luxury skincare in an imaginative, stylized form.",
     skills: ["Dimension", "Photoshop", "Illustrator"],
     image: "/images/cloudcosmetics.png",
     timeline: "MAY 30th - JUNE 11th 2025",
     process:
-      "For this project I made and designed the containers in Adobe Dimension and made the ad in Photoshop",
-    why: "This project was made to test our skills in 3d model design and see how we can use lighting and different materials in our favour.",
+      "This project was created to test and enhance our skills in 3D model design, allowing us to experiment with various lighting techniques and material properties to create realistic and visually compelling scenes. Through this process, we explored how different light sources, reflections, and textures interact to bring depth and dimension to our models, ultimately improving our understanding of digital composition and rendering workflows.",
+    why: "This project was created to test and enhance our skills in 3D model design, allowing us to experiment with various lighting techniques and material properties to create realistic and visually compelling scenes. Through this process, we explored how different light sources, reflections, and textures interact to bring depth and dimension to our models, ultimately improving our understanding of digital composition and rendering workflows.",
   },
   {
     id: 3,
     slug: "chromakopia-poster",
     title: "Chromakopia Swiss Poster",
     description:
-      "A swiss design inspired poster made for Tyler the creators Chromakopia tour. Made with Indesign and Photoshop",
+      "A Swiss design-inspired poster created for Tyler, The Creator’s Chromakopia tour, emphasizing clean typography and a minimalist color palette. Crafted using Adobe InDesign and Photoshop, the design balances modern aesthetics with vibrant visual energy to capture the essence of the tour while paying homage to classic Swiss design principles",
     skills: ["Photoshop", "Indesign"],
     image: "/images/chromakopia.png",
     timeline: "MAR 27th - APR 8th 2025",
     process:
-      "This project was made to redesign the mobile version of Linkedin, i wanted to challenge myself and see how i can change up the app to fit proper UI/UX principles as well just see what i can do to simplify the overall UI.",
-    why: "This project was made to redesign the mobile version of Linkedin, i wanted to challenge myself and see how i can change up the app to fit proper UI/UX principles as well just see what i can do to simplify the overall UI.",
+      "For this Swiss design-inspired poster for Tyler, The Creator’s Chromakopia tour, I began by researching classic Swiss design principles such as clean typography, grid systems, and minimalism. I sketched initial concepts focusing on how to balance simplicity with bold visual impact. Using Adobe InDesign and Photoshop, I developed the layout by carefully aligning text and images to create a harmonious composition. Throughout the process, I experimented with color choices and typography to maintain clarity and visual hierarchy, ensuring the poster effectively conveyed the energy of the tour while staying true to the Swiss design aesthetic.",
+    why: "I chose to base the poster on Swiss design principles because of their timeless emphasis on clarity, simplicity, and effective communication. Tyler, The Creator’s Chromakopia tour is vibrant and energetic, so I wanted a design that could capture that spirit without overwhelming the viewer. By using clean layouts and strong typography, the poster delivers key information quickly",
   },
   {
     id: 4,
     slug: "linkedin-redesign",
     title: "LinkedIn Redesign",
-    description:
-      "LinkedIn UI redesign final project made in figma for UI/UX class",
+    description: "This project involved redesigning the mobile version of LinkedIn as a personal challenge to apply proper UI/UX principles. I aimed to rethink the app’s interface to simplify the overall user experience, improve usability, and create a cleaner, more intuitive design. Through this process, I explored ways to enhance navigation and reduce clutter while maintaining the app’s core functionality.",
     skills: ["Figma"],
     image: "/images/linkedin.png",
     timeline: "MAR 27th - APR 8th 2025",
     process:
-      "This project was made to redesign the mobile version of Linkedin, i wanted to challenge myself and see how i can change up the app to fit proper UI/UX principles as well just see what i can do to simplify the overall UI.",
-    why: "This project was made to redesign the mobile version of Linkedin, i wanted to challenge myself and see how i can change up the app to fit proper UI/UX principles as well just see what i can do to simplify the overall UI.",
+      "For this redesign of LinkedIn’s mobile app, I began by analyzing the existing interface to identify usability challenges and opportunities for improvement. I then developed user personas to understand the needs and behaviors of typical users. Using these insights, I created low-fidelity wireframes to experiment with layouts and navigation. After refining the structure, I designed high-fidelity mockups in Figma, focusing on simplifying the UI and enhancing visual hierarchy. To validate the design, I built an interactive prototype and conducted usability testing, gathering feedback that informed final iterations to improve clarity, accessibility, and overall user experience.",
+    why: "I undertook this redesign to address the complexity and clutter often experienced in professional networking apps. By focusing on simplifying the user interface and improving usability, I aimed to make LinkedIn’s mobile experience more approachable and efficient. The goal was to help users connect, communicate, and manage their professional presence with greater ease, ultimately encouraging more meaningful engagement on the platform.",
   },
 ];

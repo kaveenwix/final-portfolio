@@ -65,7 +65,7 @@ export default function Index() {
               {/* Project 1 - Tyler Template */}
               <div>
                 <div className="group cursor-pointer p-3 sm:p-4 rounded-2xl">
-                  <Link to="/works/sga" className="shadow-lg">
+                  <Link to="/works/chromakopia" className="shadow-lg">
                     <img
                       src="/images/chromakopia.png"
                       alt="Tyler Template Project"
@@ -97,7 +97,7 @@ export default function Index() {
               {/* Project 3 - Cloud Cosmetics */}
               <div>
                 <div className="group cursor-pointer p-3 sm:p-4  rounded-2xl">
-                  <Link to="/works/sga" className="shadow-lg">
+                  <Link to="/works/cloud" className="shadow-lg">
                     <img
                       src="/images/cloudcosmetics.png"
                       alt="Cloud Cosmetics Project"
@@ -130,8 +130,12 @@ export default function Index() {
         <div className="max-w-4xl mx-auto">
           <div className="bg-black rounded-3xl p-6 sm:p-8">
             <div className="flex items-center mb-6">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gray-600 mr-3 sm:mr-4 overflow-hidden flex-shrink-0">
-                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600"></div>
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full mr-3 sm:mr-4 overflow-hidden flex-shrink-0">
+                <img
+                  src="/images/testimonials/lily.JPG"
+                  alt="Lily Taylor"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-white font-archivo font-bold text-lg sm:text-xl">
                 Lily Taylor
