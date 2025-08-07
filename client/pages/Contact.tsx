@@ -97,7 +97,7 @@ export default function Contact() {
             <div className="mb-12">
               <div className="flex justify-center space-x-8 mb-8">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/kaveen-wickramasinghe-9a892a217/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
@@ -106,7 +106,7 @@ export default function Contact() {
                   <Linkedin size={48} />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/kaveenoodle/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"

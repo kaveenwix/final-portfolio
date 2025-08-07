@@ -4,7 +4,7 @@ export const projects = [
     slug: "sga-long-document",
     title: "SGA Long Document",
     description:
-      "This magazine-style feature takes you on an immersive journey through Shai Gilgeous-Alexander’s incredible 2024–2025 season — a year that solidified his place among the NBA’s elite. From his pivotal role on the court to his leadership off it, Shai’s evolution has been nothing short of remarkable. As the face of the Oklahoma City Thunder’s resurgence, Shai’s impact goes beyond the box score. He’s become the symbol of a new era in basketball — one built on skill, humility, and undeniable greatness. With his silky smooth game, standout fashion sense, and relentless work ethic, Shai Gilgeous-Alexander isn’t just one of the top 10 players in the world right now — he’s the future face of the NBA.",
+      "This magazine-style feature takes you on a  journey through Shai Gilgeous-Alexander’s incredible 2024–2025 season, a year that solidified his place among the NBA’s elite. From his pivotal role on the court to his leadership off it, Shai’s evolution has been nothing short of remarkable. As the face of the Oklahoma City Thunder’s resurgence, Shai’s impact goes beyond the box score. He’s become the symbol of a new era in basketball — one built on skill, humility, and undeniable greatness. With his shifty game, standout fashion sense, and relentless work ethic, Shai Gilgeous-Alexander isn’t just one of the top 10 players in the world right now — he’s the future face of the NBA.",
     skills: ["Indesign", "Photoshop"],
     image: "/images/sga.png",
     embed: "/assets/longdoc.pdf",
