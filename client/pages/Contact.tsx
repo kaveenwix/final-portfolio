@@ -115,7 +115,7 @@ export default function Contact() {
                   <Instagram size={48} />
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://github.com/kaveenwix"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-gray-300 transition-colors"
