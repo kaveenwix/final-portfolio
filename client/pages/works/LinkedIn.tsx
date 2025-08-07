@@ -88,9 +88,15 @@ export default function LinkedIn() {
                     </span>
                   ))}
                 </div>
-                <p className="font-helvetica font-bold mb-6 leading-relaxed text-white">
+                <p className="font-helvetica font-bold leading-relaxed text-white">
                   {project.description}
                 </p>
+                <Link
+                  className="bg-portfolio-blue text-white px-6 py-3 rounded-full font-archivo font-bold w-fit self-end hover:bg-blue-700 transition-colors duration-300"
+                  target="_blank"
+                  to={project.link}>
+                  View Project
+                </Link>
               </div>
             </section>
 

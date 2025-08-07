@@ -91,7 +91,7 @@ export default function Work() {
                       {project.title}
                     </h3>
 
-                    <p className="font-helvetica font-bold mb-6 leading-relaxed">
+                    <p className="font-helvetica font-bold leading-relaxed">
                       {project.description}
                     </p>
 

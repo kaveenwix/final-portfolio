@@ -88,7 +88,7 @@ export default function CloudCosmetics() {
                     </span>
                   ))}
                 </div>
-                <p className="font-helvetica font-bold mb-6 leading-relaxed text-white">
+                <p className="font-helvetica font-bold leading-relaxed text-white">
                   {project.description}
                 </p>
               </div>
