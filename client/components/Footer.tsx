@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
@@ -16,9 +17,9 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <div className="flex flex-wrap justify-center gap-8 text-lg font-helvetica font-bold">
-            <link rel="stylesheet" href="pages/works/About.tsx" /> <a href="#about" className="hover:text-gray-300 transition-colors">about</a>
-            <a href="#work" className="hover:text-gray-300 transition-colors">work</a>
-            <a href="#contact" className="hover:text-gray-300 transition-colors">contact</a>
+            <Link to="/about" className="hover:text-gray-300 transition-colors">about</Link>
+            <Link to="/work" className="hover:text-gray-300 transition-colors">work</Link>
+            <Link to="/contact" className="hover:text-gray-300 transition-colors">contact</Link>
           </div>
 
           {/* Social Links */}
@@ -33,7 +34,7 @@ export default function Footer() {
               <Linkedin size={24} />
             </a>
             <a 
-              href="https://instagram.com" 
+              href="https://instagram.com/kaveenoodle" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"
@@ -42,7 +43,7 @@ export default function Footer() {
               <Instagram size={24} />
             </a>
             <a 
-              href="https://github.com" 
+              href="https://github.com/kaveenwix" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition-colors"
