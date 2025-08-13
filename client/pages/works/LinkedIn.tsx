@@ -85,7 +85,7 @@ export default function LinkedIn() {
                     </span>
                   ))}
                 </div>
-                <p className="font-helvetica font-bold leading-relaxed text-white">
+                <p className="font-helvetica leading-relaxed text-white">
                   {project.description}
                 </p>
                 <Link
@@ -105,7 +105,7 @@ export default function LinkedIn() {
                   </h2>
                   <EllipsisIcon className="text-portfolio-blue" />
                 </div>
-                <p className="font-helvetica font-bold leading-relaxed">
+                <p className="font-helvetica leading-relaxed">
                   {project.process}
                 </p>
               </div>
@@ -128,7 +128,7 @@ export default function LinkedIn() {
                     Why?
                   </h2>
                 </div>
-                <p className="font-helvetica font-bold leading-relaxed">
+                <p className="font-helvetica leading-relaxed">
                   {project.why}
                 </p>
               </div>

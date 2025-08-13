@@ -84,11 +84,11 @@ export default function Work() {
                       {project.title}
                     </h3>
 
-                    <p className="font-helvetica font-bold leading-relaxed">
+                    <p className="font-helvetica leading-relaxed">
                       {project.description}
                     </p>
 
-                    <div className="mb-6">
+                    <div className="my-6">
                       <h4 className="font-helvetica font-bold text-lg mb-2">
                         Skills
                       </h4>
