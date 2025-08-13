@@ -3,63 +3,60 @@ import { projects } from "../../projects";
 import { ArrowRight, Calendar, EllipsisIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
-export default function CloudCosmetics() {
-  const project = projects.find((p) => p.slug === "cloud-cosmetics");
-  const nextProject = projects.find((p) => p.id === project.id + 1);
+export default function LinkedIn() {
+  const project = projects.find((p) => p.slug === "linkedin-redesign");
+  const nextProject = projects.find((p) => p.id === 1);
 
   return (
     <>
       <Helmet>
         <title>
-          Cloud Cosmetics 3D Ad - Kaveen Wickramasinghe | 3D Design Project
+          LinkedIn Redesign - Kaveen Wickramasinghe | UI/UX Design Project
         </title>
         <meta
           name="description"
-          content="Discover my 3D advertisement for the fictional beauty brand Cloud Cosmetics, exploring ethereal and dreamy qualities through soft lighting and modern minimalist design using Adobe Dimension."
+          content="Explore my redesign of LinkedIn's mobile app as a personal challenge to apply proper UI/UX principles. Discover my process of simplifying the user experience and creating a cleaner, more intuitive design."
         />
         <meta
           name="keywords"
-          content="Cloud Cosmetics, 3D design, beauty brand advertisement, Kaveen Wickramasinghe, Adobe Dimension, 3D modeling, cosmetics design"
+          content="LinkedIn redesign, UI/UX design, mobile app design, Kaveen Wickramasinghe, user experience, interface design, Figma"
         />
         <meta name="author" content="Kaveen Wickramasinghe" />
 
-        {/* Open Graph */}
         <meta
           property="og:title"
-          content="Cloud Cosmetics 3D Ad - Kaveen Wickramasinghe | 3D Design Project"
+          content="LinkedIn Redesign - Kaveen Wickramasinghe | UI/UX Design Project"
         />
         <meta
           property="og:description"
-          content="Discover my 3D advertisement for the fictional beauty brand Cloud Cosmetics, exploring ethereal and dreamy qualities through soft lighting and modern minimalist design using Adobe Dimension."
+          content="Explore my redesign of LinkedIn's mobile app as a personal challenge to apply proper UI/UX principles. Discover my process of simplifying the user experience and creating a cleaner, more intuitive design."
         />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://kaveenwickramasinghe.com/works/cloud-cosmetics"
+          content="https://kaveenwickramasinghe.com/works/linkedin-redesign"
         />
-        <meta property="og:image" content="/images/cloudcosmetics.png" />
+        <meta property="og:image" content="/images/linkedin.png" />
         <meta
           property="og:image:alt"
-          content="Cloud Cosmetics 3D Advertisement by Kaveen Wickramasinghe"
+          content="LinkedIn Mobile App Redesign by Kaveen Wickramasinghe"
         />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Cloud Cosmetics 3D Ad - Kaveen Wickramasinghe | 3D Design"
+          content="LinkedIn Redesign - Kaveen Wickramasinghe | UI/UX Design Project"
         />
         <meta
           name="twitter:description"
-          content="Discover my 3D advertisement for the fictional beauty brand Cloud Cosmetics, exploring ethereal and dreamy qualities through soft lighting and modern minimalist design using Adobe Dimension."
+          content="Explore my redesign of LinkedIn's mobile app as a personal challenge to apply proper UI/UX principles. Discover my process of simplifying the user experience and creating a cleaner, more intuitive design."
         />
-        <meta name="twitter:image" content="/images/cloudcosmetics.png" />
+        <meta name="twitter:image" content="/images/linkedin.png" />
 
-        {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://kaveenwickramasinghe.com/works/cloud-cosmetics"
+          href="https://kaveenwickramasinghe.com/works/linkedin-redesign"
         />
       </Helmet>
       <div className="relative z-10 py-12 px-4">
@@ -91,6 +88,12 @@ export default function CloudCosmetics() {
                 <p className="font-helvetica font-bold leading-relaxed text-white">
                   {project.description}
                 </p>
+                <Link
+                  className="bg-portfolio-blue text-white px-6 py-3 rounded-full font-archivo font-bold w-fit self-end hover:bg-blue-700 transition-colors duration-300"
+                  target="_blank"
+                  to={project.link}>
+                  View Project
+                </Link>
               </div>
             </section>
 

@@ -19,16 +19,14 @@ export default function Navigation() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-black/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 py-2 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <span className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center">
-              <img src="/images/logos/logo.png" alt="Logo" />
+          <Link to="/" className="flex items-center h-11">
+            <span className="h-full flex items-center justify-center">
+              <img src="/assets/logoDark.svg" alt="Logo" className="h-full" />
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
             {navigation.map((item) => (
               <Link
@@ -45,8 +43,7 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          <div className="md:hidden h-11 w-11 grid place-items-center">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-black hover:text-portfolio-blue transition-colors"
@@ -57,7 +54,6 @@ export default function Navigation() {
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="md:hidden bg-cream border-t border-black/10">
           <div className="px-2 pt-2 pb-3 space-y-1">

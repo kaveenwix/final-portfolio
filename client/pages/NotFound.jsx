@@ -26,7 +26,6 @@ const NotFound = () => {
         />
         <meta name="author" content="Kaveen Wickramasinghe" />
 
-        {/* Open Graph */}
         <meta
           property="og:title"
           content="404 - Page Not Found | Kaveen Wickramasinghe Portfolio"
@@ -39,7 +38,6 @@ const NotFound = () => {
         <meta property="og:url" content="https://kaveenwickramasinghe.ca/404" />
         <meta property="og:image" content="/images/kaveen/kaveen.png" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
@@ -50,7 +48,6 @@ const NotFound = () => {
           content="Oops! The page you're looking for doesn't exist. Return to my portfolio to explore my UI/UX and graphic design work."
         />
 
-        {/* Additional SEO */}
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-gray-100">

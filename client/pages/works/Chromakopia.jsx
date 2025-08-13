@@ -3,63 +3,61 @@ import { projects } from "../../projects";
 import { ArrowRight, Calendar, EllipsisIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
-export default function LinkedIn() {
-  const project = projects.find((p) => p.slug === "linkedin-redesign");
-  const nextProject = projects.find((p) => p.id === 1);
+export default function Chromakopia() {
+  const project = projects.find((p) => p.slug === "chromakopia-poster");
+  const nextProject = projects.find((p) => p.id === project.id + 1);
 
   return (
     <>
       <Helmet>
         <title>
-          LinkedIn Redesign - Kaveen Wickramasinghe | UI/UX Design Project
+          Chromakopia Swiss Poster - Kaveen Wickramasinghe | Graphic Design
+          Project
         </title>
         <meta
           name="description"
-          content="Explore my redesign of LinkedIn's mobile app as a personal challenge to apply proper UI/UX principles. Discover my process of simplifying the user experience and creating a cleaner, more intuitive design."
+          content="View my Swiss design-inspired poster for Tyler, The Creator's Chromakopia tour, emphasizing clean typography and minimalist aesthetics."
         />
         <meta
           name="keywords"
-          content="LinkedIn redesign, UI/UX design, mobile app design, Kaveen Wickramasinghe, user experience, interface design, Figma"
+          content="Chromakopia poster, Swiss design, Tyler The Creator, graphic design, Kaveen Wickramasinghe, poster design, minimalist design, InDesign"
         />
         <meta name="author" content="Kaveen Wickramasinghe" />
 
-        {/* Open Graph */}
         <meta
           property="og:title"
-          content="LinkedIn Redesign - Kaveen Wickramasinghe | UI/UX Design Project"
+          content="Chromakopia Swiss Poster - Kaveen Wickramasinghe | Graphic Design Project"
         />
         <meta
           property="og:description"
-          content="Explore my redesign of LinkedIn's mobile app as a personal challenge to apply proper UI/UX principles. Discover my process of simplifying the user experience and creating a cleaner, more intuitive design."
+          content="View my Swiss design-inspired poster for Tyler, The Creator's Chromakopia tour, emphasizing clean typography and minimalist aesthetics."
         />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://kaveenwickramasinghe.com/works/linkedin-redesign"
+          content="https://kaveenwickramasinghe.com/works/chromakopia-poster"
         />
-        <meta property="og:image" content="/images/linkedin.png" />
+        <meta property="og:image" content="/images/chromakopia.png" />
         <meta
           property="og:image:alt"
-          content="LinkedIn Mobile App Redesign by Kaveen Wickramasinghe"
+          content="Chromakopia Swiss Design Poster by Kaveen Wickramasinghe"
         />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="LinkedIn Redesign - Kaveen Wickramasinghe | UI/UX Design Project"
+          content="Chromakopia Swiss Poster - Kaveen Wickramasinghe | Graphic Design"
         />
         <meta
           name="twitter:description"
-          content="Explore my redesign of LinkedIn's mobile app as a personal challenge to apply proper UI/UX principles. Discover my process of simplifying the user experience and creating a cleaner, more intuitive design."
+          content="View my Swiss design-inspired poster for Tyler, The Creator's Chromakopia tour, emphasizing clean typography and minimalist aesthetics."
         />
-        <meta name="twitter:image" content="/images/linkedin.png" />
+        <meta name="twitter:image" content="/images/chromakopia.png" />
 
-        {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://kaveenwickramasinghe.com/works/linkedin-redesign"
+          href="https://kaveenwickramasinghe.com/works/chromakopia-poster"
         />
       </Helmet>
       <div className="relative z-10 py-12 px-4">
@@ -91,12 +89,6 @@ export default function LinkedIn() {
                 <p className="font-helvetica font-bold leading-relaxed text-white">
                   {project.description}
                 </p>
-                <Link
-                  className="bg-portfolio-blue text-white px-6 py-3 rounded-full font-archivo font-bold w-fit self-end hover:bg-blue-700 transition-colors duration-300"
-                  target="_blank"
-                  to={project.link}>
-                  View Project
-                </Link>
               </div>
             </section>
 

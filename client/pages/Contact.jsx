@@ -19,7 +19,6 @@ export default function Contact() {
         />
         <meta name="author" content="Kaveen Wickramasinghe" />
 
-        {/* Open Graph */}
         <meta
           property="og:title"
           content="Contact - Kaveen Wickramasinghe | UI/UX & Graphic Designer"
@@ -36,7 +35,6 @@ export default function Contact() {
         <meta property="og:image" content="/images/kaveen/kaveen.png" />
         <meta property="og:image:alt" content="Contact Kaveen Wickramasinghe" />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -48,13 +46,11 @@ export default function Contact() {
         />
         <meta name="twitter:image" content="/images/kaveen/kaveen.png" />
 
-        {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://kaveenwickramasinghe.ca/contact" />
       </Helmet>
       <div className="relative z-10 py-12 px-4">
         <div className="max-w-4xl mx-auto">
-          {/* Header */}
           <div className="bg-black text-white rounded-2xl p-6 mb-8 inline-block">
             <h1 className="text-4xl font-archivo font-bold flex items-center">
               <span className="mr-4">Contact</span>
@@ -62,9 +58,7 @@ export default function Contact() {
             </h1>
           </div>
 
-          {/* Main Contact Section */}
           <div className="bg-black text-white rounded-3xl p-12 text-center">
-            {/* Profile Image */}
             <div className="mb-8">
               <div className="w-32 h-32 mx-auto rounded-full overflow-hidden">
                 <img
@@ -75,25 +69,23 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Navigation Links */}
             <div className="mb-12">
-              <div className="space-y-6 text-left max-w-sm mx-auto">
+              <div className="space-y-6 flex flex-col items-center max-w-sm mx-auto">
                 <Link
                   to="/about"
-                  className="block text-3xl font-helvetica font-bold hover:text-gray-300 transition-colors"
+                  className="block w-fit text-3xl font-helvetica font-bold hover:text-gray-300 transition-colors"
                 >
                   About
                 </Link>
                 <Link
                   to="/work"
-                  className="block text-3xl font-helvetica font-bold hover:text-gray-300 transition-colors"
+                  className="block w-fit text-3xl font-helvetica font-bold hover:text-gray-300 transition-colors"
                 >
                   Work
                 </Link>
               </div>
             </div>
 
-            {/* Social Links */}
             <div className="mb-12">
               <div className="flex justify-center space-x-8 mb-8">
                 <a
@@ -125,20 +117,18 @@ export default function Contact() {
                 </a>
               </div>
 
-              {/* Logo */}
               <div className="w-36 h-36 sm:w-44 sm:h-44 flex items-center justify-center mx-auto">
                 <img
-                  src="/images/logos/logowhiteversion.png"
+                  src="/assets/logoLight.svg"
                   alt="Kaveen Wickramasinghe Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
             </div>
 
-            {/* Email Section */}
             <div className="mb-8">
               <h2 className="text-2xl font-helvetica font-bold mb-4">
-                my email:
+                My email:
               </h2>
               <div className="bg-white text-black rounded-full px-8 py-4 inline-flex items-center">
                 <Mail className="mr-3" size={24} />
@@ -146,11 +136,6 @@ export default function Contact() {
                   Kaveenwix@gmail.com
                 </span>
               </div>
-            </div>
-
-            {/* Footer Text */}
-            <div className="text-2xl font-helvetica font-bold">
-              designed and coded by Kaveen W
             </div>
           </div>
         </div>

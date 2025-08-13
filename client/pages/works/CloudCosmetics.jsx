@@ -3,64 +3,60 @@ import { projects } from "../../projects";
 import { ArrowRight, Calendar, EllipsisIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
-export default function Chromakopia() {
-  const project = projects.find((p) => p.slug === "chromakopia-poster");
+export default function CloudCosmetics() {
+  const project = projects.find((p) => p.slug === "cloud-cosmetics");
   const nextProject = projects.find((p) => p.id === project.id + 1);
 
   return (
     <>
       <Helmet>
         <title>
-          Chromakopia Swiss Poster - Kaveen Wickramasinghe | Graphic Design
-          Project
+          Cloud Cosmetics 3D Ad - Kaveen Wickramasinghe | 3D Design Project
         </title>
         <meta
           name="description"
-          content="View my Swiss design-inspired poster for Tyler, The Creator's Chromakopia tour, emphasizing clean typography and minimalist aesthetics."
+          content="Discover my 3D advertisement for the fictional beauty brand Cloud Cosmetics, exploring ethereal and dreamy qualities through soft lighting and modern minimalist design using Adobe Dimension."
         />
         <meta
           name="keywords"
-          content="Chromakopia poster, Swiss design, Tyler The Creator, graphic design, Kaveen Wickramasinghe, poster design, minimalist design, InDesign"
+          content="Cloud Cosmetics, 3D design, beauty brand advertisement, Kaveen Wickramasinghe, Adobe Dimension, 3D modeling, cosmetics design"
         />
         <meta name="author" content="Kaveen Wickramasinghe" />
 
-        {/* Open Graph */}
         <meta
           property="og:title"
-          content="Chromakopia Swiss Poster - Kaveen Wickramasinghe | Graphic Design Project"
+          content="Cloud Cosmetics 3D Ad - Kaveen Wickramasinghe | 3D Design Project"
         />
         <meta
           property="og:description"
-          content="View my Swiss design-inspired poster for Tyler, The Creator's Chromakopia tour, emphasizing clean typography and minimalist aesthetics."
+          content="Discover my 3D advertisement for the fictional beauty brand Cloud Cosmetics, exploring ethereal and dreamy qualities through soft lighting and modern minimalist design using Adobe Dimension."
         />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://kaveenwickramasinghe.com/works/chromakopia-poster"
+          content="https://kaveenwickramasinghe.com/works/cloud-cosmetics"
         />
-        <meta property="og:image" content="/images/chromakopia.png" />
+        <meta property="og:image" content="/images/cloudcosmetics.png" />
         <meta
           property="og:image:alt"
-          content="Chromakopia Swiss Design Poster by Kaveen Wickramasinghe"
+          content="Cloud Cosmetics 3D Advertisement by Kaveen Wickramasinghe"
         />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Chromakopia Swiss Poster - Kaveen Wickramasinghe | Graphic Design"
+          content="Cloud Cosmetics 3D Ad - Kaveen Wickramasinghe | 3D Design"
         />
         <meta
           name="twitter:description"
-          content="View my Swiss design-inspired poster for Tyler, The Creator's Chromakopia tour, emphasizing clean typography and minimalist aesthetics."
+          content="Discover my 3D advertisement for the fictional beauty brand Cloud Cosmetics, exploring ethereal and dreamy qualities through soft lighting and modern minimalist design using Adobe Dimension."
         />
-        <meta name="twitter:image" content="/images/chromakopia.png" />
+        <meta name="twitter:image" content="/images/cloudcosmetics.png" />
 
-        {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://kaveenwickramasinghe.com/works/chromakopia-poster"
+          href="https://kaveenwickramasinghe.com/works/cloud-cosmetics"
         />
       </Helmet>
       <div className="relative z-10 py-12 px-4">

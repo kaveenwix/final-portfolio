@@ -23,7 +23,6 @@ export default function SGA() {
         />
         <meta name="author" content="Kaveen Wickramasinghe" />
 
-        {/* Open Graph */}
         <meta
           property="og:title"
           content="SGA Long Document - Kaveen Wickramasinghe | Editorial Design Project"
@@ -43,7 +42,6 @@ export default function SGA() {
           content="SGA Magazine Design by Kaveen Wickramasinghe"
         />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -55,7 +53,6 @@ export default function SGA() {
         />
         <meta name="twitter:image" content="/images/sga.png" />
 
-        {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
@@ -67,7 +64,6 @@ export default function SGA() {
           <div className="bg-black rounded-3xl p-8 flex flex-col gap-4">
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
               <div className="w-full">
-                {/* PDF Viewer */}
                 <div className="w-full aspect-[1/1.35] border border-gray-300 rounded-lg overflow-hidden">
                   <iframe
                     src="/assets/Longdoc.pdf#toolbar=0&navpanes=0"

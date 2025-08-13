@@ -11,7 +11,7 @@ export default function Index() {
         </title>
         <meta
           name="description"
-          content="Hey, My names Kaveen im an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
+          content="Hey, My names Kaveen I'm an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
         />
         <meta
           name="keywords"
@@ -19,14 +19,13 @@ export default function Index() {
         />
         <meta name="author" content="Kaveen Wickramasinghe" />
 
-        {/* Open Graph */}
         <meta
           property="og:title"
           content="Kaveen Wickramasinghe - UI/UX & Graphic Designer Portfolio"
         />
         <meta
           property="og:description"
-          content="Hey, My names Kaveen im an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
+          content="Hey, My names Kaveen I'm an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kaveenwickramasinghe.ca" />
@@ -36,7 +35,6 @@ export default function Index() {
           content="Kaveen Wickramasinghe - UI/UX Designer"
         />
 
-        {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -44,19 +42,16 @@ export default function Index() {
         />
         <meta
           name="twitter:description"
-          content="Hey, My names Kaveen im an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
+          content="Hey, My names Kaveen I'm an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
         />
         <meta name="twitter:image" content="/images/kaveen/kaveen.png" />
         <meta name="twitter:creator" content="@kaveenwickramasinghe" />
 
-        {/* Additional SEO */}
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://kaveenwickramasinghe.ca" />
       </Helmet>
       <div className="relative z-10">
-        {/* Hero Section */}
         <section className="relative min-h-screen flex items-center justify-center px-4">
-          {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-20 left-20 w-32 h-32 rounded-full border-2 border-black"></div>
             <div className="absolute top-40 right-40 w-24 h-24 rounded-full border-2 border-black"></div>
@@ -64,7 +59,6 @@ export default function Index() {
           </div>
 
           <div className="max-w-4xl mx-auto text-center relative z-10">
-            {/* Profile Image */}
             <div className="mb-8">
               <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 rounded-full border-4 sm:border-6 border-black overflow-hidden">
                 <img
@@ -75,13 +69,12 @@ export default function Index() {
               </div>
             </div>
 
-            {/* Name and Intro */}
             <div className="bg-white rounded-3xl p-6 sm:p-8 mb-8 shadow-lg mx-4 sm:mx-0">
               <h1 className="text-xl sm:text-2xl font-archivo font-bold text-black mb-4">
                 Kaveen Wickramasinghe
               </h1>
               <p className="text-base sm:text-lg font-helvetica font-bold text-black mb-4 leading-relaxed">
-                Hey, My names Kaveen im an aspiring, UI/UX and graphic designer,
+                Hey, My names Kaveen I'm an aspiring, UI/UX and graphic designer,
                 take a look around, if you like what you see contact me down
                 below!
               </p>
@@ -89,33 +82,30 @@ export default function Index() {
                 to="/contact"
                 className="text-portfolio-blue font-helvetica font-bold hover:underline"
               >
-                contact me
+                Contact me
               </Link>
             </div>
 
-            {/* Scroll Indicator */}
             <div className="animate-bounce">
               <ArrowDown className="mx-auto text-black" size={32} />
             </div>
           </div>
         </section>
 
-        {/* Featured Projects Section */}
         <section className="py-12 sm:py-20 px-4 z-10">
           <div className="max-w-6xl mx-auto">
             <div className="bg-black rounded-3xl p-6 sm:p-8 mb-12">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="text-xl sm:text-2xl font-archivo font-bold text-white">
-                  some of my favourite pieces
+                  Some of my favourite pieces
                 </h2>
                 <Star className="text-white" size={24} />
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-3 mt-8">
-                {/* Project 1 - Tyler Template */}
                 <div>
                   <div className="group cursor-pointer p-3 sm:p-4 rounded-2xl">
-                    <Link to="/works/chromakopia" className="shadow-lg">
+                    <Link to="/works/chromakopia-poster" className="shadow-lg">
                       <img
                         src="/images/chromakopia.png"
                         alt="Tyler Template Project"
@@ -128,10 +118,9 @@ export default function Index() {
                   </h3>
                 </div>
 
-                {/* Project 2 - SGA */}
                 <div className="lg:-translate-y-8">
                   <div className="group cursor-pointer p-3 sm:p-4 rounded-2xl">
-                    <Link to="/works/sga" className="shadow-lg">
+                    <Link to="/works/sga-long-document" className="shadow-lg">
                       <img
                         src="/images/sga.png"
                         alt="SGA MVP Project"
@@ -144,10 +133,9 @@ export default function Index() {
                   </h3>
                 </div>
 
-                {/* Project 3 - Cloud Cosmetics */}
                 <div>
                   <div className="group cursor-pointer p-3 sm:p-4  rounded-2xl">
-                    <Link to="/works/cloud" className="shadow-lg">
+                    <Link to="/works/cloud-cosmetics" className="shadow-lg">
                       <img
                         src="/images/cloudcosmetics.png"
                         alt="Cloud Cosmetics Project"
@@ -162,20 +150,18 @@ export default function Index() {
               </div>
             </div>
 
-            {/* View More Work Button */}
             <div className="text-center">
               <Link
                 to="/work"
                 className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-helvetica font-bold hover:bg-gray-800 transition-colors"
               >
-                View All Work
+                View all work
                 <ArrowRight className="ml-2" size={20} />
               </Link>
             </div>
           </div>
         </section>
 
-        {/* Testimonial Section */}
         <section className="py-12 sm:py-20 px-4 z-10">
           <div className="max-w-4xl mx-auto">
             <div className="bg-black rounded-3xl p-6 sm:p-8">
@@ -192,7 +178,7 @@ export default function Index() {
                 </h3>
               </div>
 
-              <blockquote className="text-white font-helvetica font-bold text-sm sm:text-base leading-relaxed">
+              <blockquote className="text-white font-helvetica text-sm sm:text-base leading-relaxed">
                 "I've worked on a bunch of group projects with Kaveen, and he's
                 one of the best people to have on your team. He's super
                 reliable, always brings great ideas to the table, and knows how
