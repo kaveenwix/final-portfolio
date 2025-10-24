@@ -14,11 +14,11 @@ export default {
     },
     extend: {
       colors: {
-        // Portfolio specific colors
+
         cream: "#ECE4B7",
         "portfolio-blue": "#05299E",
 
-        // Keep existing shadcn colors
+
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
