@@ -52,12 +52,6 @@ export default function Index() {
       </Helmet>
       <div className="relative z-10">
         <section className="relative min-h-screen flex items-center justify-center px-4">
-          <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-20 left-20 w-32 h-32 rounded-full border-2 border-black"></div>
-            <div className="absolute top-40 right-40 w-24 h-24 rounded-full border-2 border-black"></div>
-            <div className="absolute bottom-40 left-40 w-16 h-16 rounded-full border-2 border-black"></div>
-          </div>
-
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div className="mb-8">
               <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 rounded-full border-4 sm:border-6 border-black overflow-hidden">
@@ -74,9 +68,9 @@ export default function Index() {
                 Kaveen Wickramasinghe
               </h1>
               <p className="text-base sm:text-lg font-helvetica font-bold text-black mb-4 leading-relaxed">
-                Hey, My names Kaveen I'm an aspiring, UI/UX and graphic designer,
-                take a look around, if you like what you see contact me down
-                below!
+                Hey, My names Kaveen I'm an aspiring, UI/UX and graphic
+                designer, take a look around, if you like what you see contact
+                me down below!
               </p>
               <Link
                 to="/contact"
