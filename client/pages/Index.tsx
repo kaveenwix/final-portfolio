@@ -29,7 +29,7 @@ export default function Index() {
       },
       { threshold: 0.1, rootMargin: "0px 0px -100px 0px" }
     );
-
+<section className="relative min-h-screen flex items-center justify-center px-4 pt-32"></section>
     // Observe all elements with data-animate-id
     document.querySelectorAll("[data-animate-id]").forEach((el) => {
       if (observerRef.current) {

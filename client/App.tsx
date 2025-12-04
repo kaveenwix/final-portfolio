@@ -1,3 +1,4 @@
+import './animations.css';
 import "./global.css";
 import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -44,3 +45,4 @@ const App = () => (
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
+
