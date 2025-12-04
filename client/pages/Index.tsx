@@ -17,10 +17,13 @@ export default function Index() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible((prev) => ({
-              ...prev,
-              [entry.target.dataset.animateId]: true,
-            }));
+            const animateId = (entry.target as HTMLElement).dataset.animateId;
+            if (animateId) {
+              setIsVisible((prev) => ({
+                ...prev,
+                [animateId]: true,
+              }));
+            }
           }
         });
       },
@@ -29,7 +32,9 @@ export default function Index() {
 
     // Observe all elements with data-animate-id
     document.querySelectorAll("[data-animate-id]").forEach((el) => {
-      observerRef.current.observe(el);
+      if (observerRef.current) {
+        observerRef.current.observe(el);
+      }
     });
 
     return () => {
@@ -87,8 +92,8 @@ export default function Index() {
         <link rel="canonical" href="https://kaveenwickramasinghe.ca" />
       </Helmet>
       <div className="relative z-10">
-        {/* Hero Section with Fade-in Animation */}
-        <section className="relative min-h-screen flex items-center justify-center px-4">
+        {/* Hero Section with Fade-in Animation - Added padding for bubble nav */}
+        <section className="relative min-h-screen flex items-center justify-center px-4 pt-32">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div
               className="mb-8 opacity-0 translate-y-8 animate-fadeInUp"
@@ -117,7 +122,7 @@ export default function Index() {
               </p>
               <Link
                 to="/contact"
-                className="inline-block text-portfolio-blue font-helvetica font-bold relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-portfolio-blue after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
+                className="inline-block text-black font-helvetica font-bold relative after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-black after:left-0 after:-bottom-1 after:transition-all after:duration-300 hover:after:w-full"
               >
                 Contact me
               </Link>
@@ -245,7 +250,7 @@ export default function Index() {
             >
               <Link
                 to="/work"
-                className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-helvetica font-bold transition-all duration-300 hover:bg-gray-800 hover:shadow-xl hover:scale-105 transform"
+                className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-helvetica font-bold transition-all duration-300 hover:bg-gray-800 hover:shadow-xl hover:scale-105 transform group"
               >
                 View all work
                 <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" size={20} />
