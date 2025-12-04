@@ -69,7 +69,7 @@ export default function Work() {
                   <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
                     <div className="bg-gray-800 rounded-2xl p-4 overflow-hidden">
                       <img
-                        src={project.image}
+                        src={project.thumbnail}
                         alt={project.title}
                         className="w-full h-fit object-cover rounded-xl"
                         style={{ marginBottom: "-50px" }}

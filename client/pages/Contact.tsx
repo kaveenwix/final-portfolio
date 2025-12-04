@@ -32,7 +32,7 @@ export default function Contact() {
           property="og:url"
           content="https://kaveenwickramasinghe.ca/contact"
         />
-        <meta property="og:image" content="/images/kaveen/kaveen.png" />
+        <meta property="og:image" content="/images/kaveen/kaveen.jpg" />
         <meta property="og:image:alt" content="Contact Kaveen Wickramasinghe" />
 
         <meta name="twitter:card" content="summary_large_image" />
@@ -44,7 +44,7 @@ export default function Contact() {
           name="twitter:description"
           content="Get in touch with me, Kaveen Wickramasinghe — UI/UX and graphic designer. Connect me via email at Kaveenwix@gmail.com or through my social media."
         />
-        <meta name="twitter:image" content="/images/kaveen/kaveen.png" />
+        <meta name="twitter:image" content="/images/kaveen/kaveen.jpg" />
 
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://kaveenwickramasinghe.ca/contact" />
@@ -62,7 +62,7 @@ export default function Contact() {
             <div className="mb-8">
               <div className="w-32 h-32 mx-auto rounded-full overflow-hidden">
                 <img
-                  src="/images/kaveen/kaveen.png"
+                  src="/images/kaveen/kaveen.jpg"
                   alt="Kaveen Wickramasinghe"
                   className="w-full h-full object-cover"
                 />
