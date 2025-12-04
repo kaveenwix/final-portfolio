@@ -3,168 +3,200 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 export default function Navigation() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isCollapsed, setIsCollapsed] = useState(false);
-  const [showTooltip, setShowTooltip] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  const navigation = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "Work", href: "/work" },
-    { name: "Contact", href: "/contact" },
-  ];
-
-  const isActive = (href: string) => {
-    return location.pathname === href;
-  };
-
+  // Handle scroll effect
   useEffect(() => {
     const handleScroll = () => {
-      const scrollThreshold = 100;
-      if (window.scrollY > scrollThreshold) {
-        setIsCollapsed(true);
-      } else {
-        setIsCollapsed(false);
-        setShowTooltip(false);
-      }
+      setIsScrolled(window.scrollY > 100);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close mobile menu when route changes
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+  }, [location]);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [isMobileMenuOpen]);
+
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "Work", path: "/work" },
+    { name: "About", path: "/about" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <>
-      {/* Desktop Bubble Navigation */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 hidden md:block">
+      {/* Bubble Navigation */}
+      <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50">
         <div
-          className={`relative transition-all duration-700 ease-out ${
-            isCollapsed ? "scale-90" : "scale-100"
+          className={`relative bg-white/90 backdrop-blur-lg rounded-full shadow-2xl border border-gray-200/50 transition-all duration-700 ease-out ${
+            isScrolled ? "px-6 py-3 scale-90" : "px-8 py-4 scale-100"
           }`}
-          onMouseEnter={() => isCollapsed && setShowTooltip(true)}
-          onMouseLeave={() => setShowTooltip(false)}
         >
-          {/* Main Bubble Container */}
-          <div
-            className={`
-              bg-cream/80 backdrop-blur-lg 
-              rounded-full border border-black/20
-              shadow-[0_8px_32px_rgba(0,0,0,0.12)]
-              transition-all duration-700 ease-out
-              ${isCollapsed ? "px-6 py-3" : "px-8 py-4"}
-            `}
-          >
-            <div className="flex items-center gap-6">
-              {/* Logo */}
-              <Link 
-                to="/" 
-                className={`flex items-center transition-all duration-700 ${
-                  isCollapsed ? "h-8" : "h-10"
-                }`}
-              >
-                <img 
-                  src="/assets/logoDark.svg" 
-                  alt="Logo" 
-                  className="h-full"
-                />
-              </Link>
-
-              {/* Navigation Links */}
-              <div
-                className={`
-                  flex items-center gap-6 overflow-hidden
-                  transition-all duration-700 ease-out
-                  ${isCollapsed ? "max-w-0 opacity-0" : "max-w-[500px] opacity-100"}
-                `}
-              >
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={`
-                      text-base font-helvetica font-bold 
-                      whitespace-nowrap
-                      transition-colors duration-300
-                      ${
-                        isActive(item.href)
-                          ? "text-portfolio-blue"
-                          : "text-black hover:text-portfolio-blue"
-                      }
-                    `}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-
-              {/* Three Dots Indicator */}
-              <div
-                className={`
-                  flex items-center gap-1.5
-                  transition-all duration-700 ease-out
-                  ${isCollapsed ? "max-w-[40px] opacity-100" : "max-w-0 opacity-0"}
-                `}
-              >
-                <div className="w-1.5 h-1.5 rounded-full bg-black/40"></div>
-                <div className="w-1.5 h-1.5 rounded-full bg-black/40"></div>
-                <div className="w-1.5 h-1.5 rounded-full bg-black/40"></div>
-              </div>
-            </div>
-          </div>
-
-          {/* Tooltip */}
-          {showTooltip && (
-            <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 px-3 py-1.5 bg-black/80 text-white text-xs rounded-lg whitespace-nowrap animate-fade-in">
-              Scroll up to expand
-              <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-black/80 rotate-45"></div>
-            </div>
-          )}
-        </div>
-      </nav>
-
-      {/* Mobile Navigation - Unchanged */}
-      <nav className="fixed top-0 left-0 right-0 z-50 md:hidden bg-cream/90 backdrop-blur-sm border-b border-black/10">
-        <div className="max-w-7xl mx-auto px-4 py-2">
-          <div className="flex justify-between items-center h-16">
-            <Link to="/" className="flex items-center h-11">
-              <span className="h-full flex items-center justify-center">
-                <img src="/assets/logoDark.svg" alt="Logo" className="h-full" />
-              </span>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center gap-2">
+            {/* Logo/Home - Always visible */}
+            <Link
+              to="/"
+              className={`font-archivo font-bold transition-all duration-500 px-4 py-2 rounded-full ${
+                isScrolled ? "text-lg" : "text-xl"
+              } ${
+                location.pathname === "/" ? "bg-black text-white" : "text-black hover:bg-gray-100"
+              }`}
+            >
+              KW
             </Link>
 
-            <div className="h-11 w-11 grid place-items-center">
-              <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-black hover:text-portfolio-blue transition-colors"
-              >
-                {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-              </button>
+            {/* Navigation Links - Collapse on scroll */}
+            <div
+              className={`flex items-center gap-2 transition-all duration-700 ${
+                isScrolled ? "opacity-0 w-0 overflow-hidden" : "opacity-100 w-auto"
+              }`}
+            >
+              <div className="w-px h-6 bg-gray-300 mx-2" />
+              {navLinks.slice(1).map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`font-helvetica font-bold text-sm px-4 py-2 rounded-full transition-all duration-300 whitespace-nowrap ${
+                    location.pathname === link.path
+                      ? "bg-black text-white"
+                      : "text-black hover:bg-gray-100"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
+
+            {/* Collapsed state indicator */}
+            {isScrolled && (
+              <div className="flex items-center gap-1 ml-2 opacity-0 animate-fadeIn">
+                <div className="w-1.5 h-1.5 rounded-full bg-black/40"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-black/40"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-black/40"></div>
+              </div>
+            )}
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="flex md:hidden items-center justify-between gap-4">
+            <Link
+              to="/"
+              className="text-xl font-archivo font-bold text-black"
+            >
+              KW
+            </Link>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 rounded-full transition-all duration-300 hover:bg-gray-100 focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <div className="relative w-5 h-5">
+                <Menu
+                  className={`absolute inset-0 transition-all duration-300 ${
+                    isMobileMenuOpen
+                      ? "opacity-0 rotate-90 scale-0"
+                      : "opacity-100 rotate-0 scale-100"
+                  }`}
+                  size={20}
+                />
+                <X
+                  className={`absolute inset-0 transition-all duration-300 ${
+                    isMobileMenuOpen
+                      ? "opacity-100 rotate-0 scale-100"
+                      : "opacity-0 -rotate-90 scale-0"
+                  }`}
+                  size={20}
+                />
+              </div>
+            </button>
           </div>
         </div>
 
-        {isMenuOpen && (
-          <div className="bg-cream border-t border-black/10">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block px-3 py-2 text-lg font-helvetica font-bold transition-colors ${
-                    isActive(item.href)
-                      ? "text-portfolio-blue"
-                      : "text-black hover:text-portfolio-blue"
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+        {/* Hover tooltip when collapsed (desktop only) */}
+        {isScrolled && (
+          <div className="hidden md:block absolute top-full left-1/2 -translate-x-1/2 mt-2 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            <div className="bg-black/80 text-white text-xs px-3 py-1.5 rounded-full whitespace-nowrap">
+              Scroll up to expand
             </div>
           </div>
         )}
       </nav>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300 md:hidden ${
+          isMobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+        }`}
+        onClick={() => setIsMobileMenuOpen(false)}
+      />
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 shadow-2xl transform transition-transform duration-500 ease-out md:hidden ${
+          isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex flex-col h-full">
+          {/* Mobile Menu Header */}
+          <div className="flex justify-between items-center p-6 border-b border-gray-200">
+            <span className="text-2xl font-archivo font-bold">Menu</span>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              aria-label="Close menu"
+            >
+              <X size={24} />
+            </button>
+          </div>
+
+          {/* Mobile Menu Links */}
+          <nav className="flex-1 overflow-y-auto py-8 px-6">
+            <div className="space-y-2">
+              {navLinks.map((link, index) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`block py-4 px-4 rounded-xl font-helvetica font-bold text-lg transition-all duration-300 transform ${
+                    location.pathname === link.path
+                      ? "bg-black text-white scale-105"
+                      : "text-black hover:bg-gray-100 hover:translate-x-2"
+                  }`}
+                  style={{
+                    animation: isMobileMenuOpen
+                      ? `slideInRight 0.3s ease-out ${index * 0.1}s both`
+                      : "none",
+                  }}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+          </nav>
+
+          {/* Mobile Menu Footer */}
+          <div className="p-6 border-t border-gray-200">
+            <p className="text-sm text-gray-600 font-helvetica">
+              © 2024 Kaveen Wickramasinghe
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
