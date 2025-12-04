@@ -61,16 +61,21 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
             <div className="relative">
               <div className="w-80 h-72 mx-auto relative">
-                <div className="absolute inset-0 bg-black rounded-3xl border-4 border-black overflow-hidden">
+                {/* Main photo */}
+                <div className="absolute inset-0 bg-black rounded-3xl border-4 border-black overflow-hidden transform transition-all duration-500 hover:scale-105 hover:rotate-2 hover:shadow-2xl">
                   <img
                     src="/images/kaveen/kaveen4.JPG"
                     alt="Kaveen Wickramasinghe"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -top-4 -left-4 w-32 h-32 bg-[url('/images/kaveen/kaveen1.jpg')] bg-cover bg-center rounded-full"></div>
-<div className="absolute -bottom-4 -right-4 w-36 h-36 bg-[url('/images/kaveen/kaveen2.jpg')] bg-cover bg-center rounded-full"></div>
-<div className="absolute top-8 -right-8 w-28 h-28 bg-[url('/images/kaveen/kaveen3.jpg')] bg-cover bg-center rounded-full"></div>
+                
+                {/* Floating circular photos with animations */}
+                <div className="absolute -top-4 -left-4 w-32 h-32 bg-[url('/images/kaveen/kaveen1.jpg')] bg-cover bg-center rounded-full border-4 border-white shadow-lg transform transition-all duration-500 hover:scale-125 hover:rotate-12 hover:z-50 hover:shadow-2xl animate-float cursor-pointer"></div>
+                
+                <div className="absolute -bottom-4 -right-4 w-36 h-36 bg-[url('/images/kaveen/kaveen2.jpg')] bg-cover bg-center rounded-full border-4 border-white shadow-lg transform transition-all duration-500 hover:scale-125 hover:-rotate-12 hover:z-50 hover:shadow-2xl animate-float-delayed cursor-pointer"></div>
+                
+                <div className="absolute top-8 -right-8 w-28 h-28 bg-[url('/images/kaveen/kaveen3.jpg')] bg-cover bg-center rounded-full border-4 border-white shadow-lg transform transition-all duration-500 hover:scale-125 hover:rotate-12 hover:z-50 hover:shadow-2xl animate-float-slow cursor-pointer"></div>
               </div>
             </div>
 
