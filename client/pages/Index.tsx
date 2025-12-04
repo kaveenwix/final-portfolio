@@ -52,7 +52,7 @@ export default function Index() {
         </title>
         <meta
           name="description"
-          content="Hey, My names Kaveen I'm an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
+          content="Hey! My name’s Kaveen. I’m an aspiring UI/UX and graphic designer. Take a look around, and if you like what you see, feel free to contact me below!"
         />
         <meta
           name="keywords"

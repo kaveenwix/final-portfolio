@@ -84,11 +84,7 @@ export default function About() {
                 Who I am!
               </h2>
               <p className="font-helvetica leading-relaxed">
-                Hi there! I'm Kaveen and I'm a lover of all things media, movies,
-                music. these are the things that inspire me and the work
-                produce. When I'm not in school or work I'm looking for the next
-                best spot to eat, thrifting, playing basketball and hanging out
-                with my closest friends.
+              Hi there! I’m Kaveen, and I’m a lover of all things media. movies, music, and everything in between. These are the things that inspire me and the work I produce. When I’m not in school or at work, I’m searching for the next best place to eat, thrifting, playing basketball, and hanging out with my closest friends.
               </p>
             </div>
           </div>
