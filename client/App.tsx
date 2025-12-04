@@ -1,4 +1,3 @@
-import './animations.css';
 import "./global.css";
 import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -22,7 +21,8 @@ const App = () => (
     <BrowserRouter>
       <div className="min-h-screen bg-cream relative">
         <Navigation />
-        <main className="pt-16 relative">
+        {/* Remove pt-16, let each page handle its own padding */}
+        <main className="relative">
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
@@ -45,4 +45,3 @@ const App = () => (
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
-

@@ -92,8 +92,8 @@ export default function Index() {
         <link rel="canonical" href="https://kaveenwickramasinghe.ca" />
       </Helmet>
       <div className="relative z-10">
-        {/* Hero Section with Fade-in Animation - Added padding for bubble nav */}
-        <section className="relative min-h-screen flex items-center justify-center px-4">
+        {/* Hero Section - Extra padding for bubble nav */}
+        <section className="relative min-h-screen flex items-center justify-center px-4 pt-32 md:pt-24">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div
               className="mb-8 opacity-0 translate-y-8 animate-fadeInUp"
@@ -304,4 +304,3 @@ export default function Index() {
     </>
   );
 }
-
