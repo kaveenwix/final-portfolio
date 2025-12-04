@@ -70,7 +70,7 @@ export default function Index() {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kaveenwickramasinghe.ca" />
-        <meta property="og:image" content="/images/kaveen/kaveen.png" />
+        <meta property="og:image" content="/images/kaveen/kaveen.jpg" />
         <meta
           property="og:image:alt"
           content="Kaveen Wickramasinghe - UI/UX Designer"
@@ -85,7 +85,7 @@ export default function Index() {
           name="twitter:description"
           content="Hey, My names Kaveen I'm an aspiring, UI/UX and graphic designer, take a look around, if you like what you see contact me down below!"
         />
-        <meta name="twitter:image" content="/images/kaveen/kaveen.png" />
+        <meta name="twitter:image" content="/images/kaveen/kaveen.jpg" />
         <meta name="twitter:creator" content="@kaveenwickramasinghe" />
 
         <meta name="robots" content="index, follow" />
@@ -96,12 +96,12 @@ export default function Index() {
         <section className="relative min-h-screen flex items-center justify-center px-4 pt-32 md:pt-24">
           <div className="max-w-4xl mx-auto text-center relative z-10">
             <div
-              className="mb-8 opacity-0 translate-y-8 animate-fadeInUp"
+              className="mb-8 translate-y-8 animate-fadeInUp"
               style={{ animationDelay: "0.1s" }}
             >
               <div className="w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-6 rounded-full border-4 sm:border-6 border-black overflow-hidden transform transition-all duration-500 hover:scale-110 hover:rotate-6 hover:shadow-2xl">
                 <img
-                  src="/images/kaveen/kaveen.png"
+                  src="/images/kaveen/kaveen.jpg"
                   alt="Kaveen Wickramasinghe"
                   className="w-full h-full object-cover"
                 />
@@ -109,7 +109,7 @@ export default function Index() {
             </div>
 
             <div
-              className="bg-white rounded-3xl p-6 sm:p-8 mb-8 shadow-lg mx-4 sm:mx-0 opacity-0 translate-y-8 animate-fadeInUp transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
+              className="bg-white rounded-3xl p-6 sm:p-8 mb-8 shadow-lg mx-4 sm:mx-0 translate-y-8 animate-fadeInUp transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
               style={{ animationDelay: "0.3s" }}
             >
               <h1 className="text-xl sm:text-2xl font-archivo font-bold text-black mb-4">
@@ -170,7 +170,10 @@ export default function Index() {
                   style={{ transitionDelay: "0.2s" }}
                 >
                   <div className="group cursor-pointer p-3 sm:p-4 rounded-2xl overflow-hidden">
-                    <Link to="/works/chromakopia-poster" className="shadow-lg block">
+                    <Link
+                      to="/works/chromakopia-poster"
+                      className="shadow-lg block"
+                    >
                       <div className="overflow-hidden rounded-xl relative">
                         <img
                           src="/images/chromakopia.png"
@@ -196,7 +199,10 @@ export default function Index() {
                   style={{ transitionDelay: "0.4s" }}
                 >
                   <div className="group cursor-pointer p-3 sm:p-4 rounded-2xl overflow-hidden">
-                    <Link to="/works/sga-long-document" className="shadow-lg block">
+                    <Link
+                      to="/works/sga-long-document"
+                      className="shadow-lg block"
+                    >
                       <div className="overflow-hidden rounded-xl relative">
                         <img
                           src="/images/sga.png"
@@ -222,7 +228,10 @@ export default function Index() {
                   style={{ transitionDelay: "0.6s" }}
                 >
                   <div className="group cursor-pointer p-3 sm:p-4 rounded-2xl overflow-hidden">
-                    <Link to="/works/cloud-cosmetics" className="shadow-lg block">
+                    <Link
+                      to="/works/cloud-cosmetics"
+                      className="shadow-lg block"
+                    >
                       <div className="overflow-hidden rounded-xl relative">
                         <img
                           src="/images/cloudcosmetics.png"
@@ -253,7 +262,10 @@ export default function Index() {
                 className="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-helvetica font-bold transition-all duration-300 hover:bg-gray-800 hover:shadow-xl hover:scale-105 transform group"
               >
                 View all work
-                <ArrowRight className="ml-2 transition-transform duration-300 group-hover:translate-x-1" size={20} />
+                <ArrowRight
+                  className="ml-2 transition-transform duration-300 group-hover:translate-x-1"
+                  size={20}
+                />
               </Link>
             </div>
           </div>

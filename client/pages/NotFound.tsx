@@ -36,7 +36,7 @@ const NotFound = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kaveenwickramasinghe.ca/404" />
-        <meta property="og:image" content="/images/kaveen/kaveen.png" />
+        <meta property="og:image" content="/images/kaveen/kaveen.jpg" />
 
         <meta name="twitter:card" content="summary" />
         <meta

@@ -66,7 +66,7 @@ export default function Chromakopia() {
             <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
               <div className="w-full">
                 <img
-                  src={project.image}
+                  src={project.images[0]}
                   alt={project.title}
                   className="w-full h-auto rounded-2xl object-cover"
                 />

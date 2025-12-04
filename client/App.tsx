@@ -13,6 +13,7 @@ import SGA from "./pages/works/SGA";
 import CloudCosmetics from "./pages/works/CloudCosmetics";
 import Chromakopia from "./pages/works/Chromakopia";
 import LinkedIn from "./pages/works/LinkedIn";
+import VancouverLovesDNB from "./pages/works/VancouverLovesDNB";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/works/cloud-cosmetics" element={<CloudCosmetics />} />
             <Route path="/works/chromakopia-poster" element={<Chromakopia />} />
             <Route path="/works/linkedin-redesign" element={<LinkedIn />} />
+            <Route path="/works/vancouver-loves-dnb" element={<VancouverLovesDNB />} />
           </Routes>
           <div className="pointer-events-none absolute bg-[url('/images/grid.png')] bg-repeat bg-center mix-blend-multiply inset-0 opacity-25" />
         </main>
