@@ -68,10 +68,9 @@ export default function About() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-
-                <div className="absolute -top-4 -left-4 w-24 h-24 bg-[url('/images/kaveen/kaveen1.jpg')] bg-cover bg-center rounded-full"></div>
-<div className="absolute -bottom-4 -right-4 w-28 h-28 bg-[url('/images/kaveen/kaveen2.jpg')] bg-cover bg-center rounded-full"></div>
-<div className="absolute top-8 -right-8 w-20 h-20 bg-[url('/images/kaveen/kaveen3.jpg')] bg-cover bg-center rounded-full"></div>
+                <div className="absolute -top-4 -left-4 w-32 h-32 bg-[url('/images/kaveen/kaveen1.jpg')] bg-cover bg-center rounded-full"></div>
+<div className="absolute -bottom-4 -right-4 w-36 h-36 bg-[url('/images/kaveen/kaveen2.jpg')] bg-cover bg-center rounded-full"></div>
+<div className="absolute top-8 -right-8 w-28 h-28 bg-[url('/images/kaveen/kaveen3.jpg')] bg-cover bg-center rounded-full"></div>
               </div>
             </div>
 
