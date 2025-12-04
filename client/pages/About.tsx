@@ -69,9 +69,9 @@ export default function About() {
                   />
                 </div>
 
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-[url('/images/kaveen/kaveen1.jpg')] bg-cover bg-center rounded-full"></div>
-                <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-[url('/images/kaveen/kaveen2.jpg')] bg-cover bg-center rounded-full"></div>
-                <div className="absolute top-8 -right-8 w-12 h-12 bg-[url('/images/kaveen/kaveen3.jpg')] bg-cover bg-center rounded-full"></div>
+                <div className="absolute -top-4 -left-4 w-24 h-24 bg-[url('/images/kaveen/kaveen1.jpg')] bg-cover bg-center rounded-full"></div>
+<div className="absolute -bottom-4 -right-4 w-28 h-28 bg-[url('/images/kaveen/kaveen2.jpg')] bg-cover bg-center rounded-full"></div>
+<div className="absolute top-8 -right-8 w-20 h-20 bg-[url('/images/kaveen/kaveen3.jpg')] bg-cover bg-center rounded-full"></div>
               </div>
             </div>
 
@@ -80,7 +80,7 @@ export default function About() {
                 Who I am!
               </h2>
               <p className="font-helvetica leading-relaxed">
-                Hi there! I'm Kaveen and I'm a lover off all things media, movies,
+                Hi there! I'm Kaveen and I'm a lover of all things media, movies,
                 music. these are the things that inspire me and the work
                 produce. When I'm not in school or work I'm looking for the next
                 best spot to eat, thrifting, playing basketball and hanging out
@@ -120,6 +120,8 @@ export default function About() {
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>JavaScript</li>
+                  <li>React</li>
+                  <li>typescript</li>
                 </ul>
               </div>
             </div>
