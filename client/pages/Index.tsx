@@ -29,6 +29,7 @@ export default function Index() {
       },
       { threshold: 0.1, rootMargin: "0px 0px -100px 0px" }
     );
+
     // Observe all elements with data-animate-id
     document.querySelectorAll("[data-animate-id]").forEach((el) => {
       if (observerRef.current) {
